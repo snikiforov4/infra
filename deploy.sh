@@ -1,6 +1,5 @@
 #!/bin/bash
-
-git clone https://github.com/Artemmkin/reddit.git reddit
+cd ~ && git clone https://github.com/Artemmkin/reddit.git reddit
 cd reddit && bundle install
 puma -d
 
