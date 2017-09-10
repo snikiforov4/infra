@@ -8,11 +8,16 @@
 		{
 			"type": "googlecompute",
 			"project_id": "{{user `project_id`}}",
+			"disk_size": 10,
+			"disk_type": "pd-standard",
 			"image_name": "reddit-base-{{timestamp}}",
+			"image_description": "Preinstalled ruby and mongodb",
 			"source_image": "{{user `source_image`}}",
 			"zone": "europe-west1-b",
 			"ssh_username": "appuser",
-			"machine_type": "{{user `machine_type`}}"
+			"machine_type": "{{user `machine_type`}}",
+			"network": "default",
+			"tags": ["puma-server"]
 		}
 	],
 	"provisioners": [
