@@ -11,7 +11,7 @@
 			"disk_size": 10,
 			"disk_type": "pd-standard",
 			"image_name": "reddit-base-{{timestamp}}",
-			"image_description": "Preinstalled ruby and mongodb",
+			"image_description": "{{user `source_image`}} with preinstalled ruby and mongodb",
 			"source_image": "{{user `source_image`}}",
 			"zone": "europe-west1-b",
 			"ssh_username": "appuser",
