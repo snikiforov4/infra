@@ -7,6 +7,16 @@ variable region {
   default     = "europe-west1"
 }
 
+variable machine_type {
+  description = "Machine type"
+  default     = "g1-small"
+}
+
+variable zone {
+  description = "Zone"
+  default     = "europe-west1-b"
+}
+
 variable public_key_path {
   description = "Path to the public key used for ssh access"
 }
@@ -23,4 +33,9 @@ variable app_disk_image {
 variable db_disk_image {
   description = "Disk image for reddit db"
   default     = "reddit-db-base"
+}
+
+variable vpc_source_ranges {
+  type        = "list"
+  description = "Allowed IP addresses"
 }

@@ -1,11 +1,11 @@
 resource "google_compute_instance" "app" {
   name         = "reddit-app"
-  machine_type = "g1-small"
+  machine_type = "${var.machine_type}"
   zone         = "europe-west1-b"
 
   boot_disk {
     initialize_params {
-      image = "${var.app_disk_image}"
+      image = "${var.disk_image}"
     }
   }
 
