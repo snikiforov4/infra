@@ -23,10 +23,3 @@ module "vpc" {
   source        = "../modules/vpc"
   source_ranges = "${var.vpc_source_ranges}"
 }
-
-terraform {
-  backend "gcs" {
-    bucket  = "ns-devops"
-    path    = "terraform/stage/terraform.tfstate"
-  }
-}
