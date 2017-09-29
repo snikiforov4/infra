@@ -5,3 +5,4 @@
 .terraform/
 backend.tf
 *.retry
+*.pyc
