@@ -1,5 +1,13 @@
 ---
 # tasks file for app
+- name: Show info about the env this host belongs to
+  debug:
+    msg: "This host is in {{ env }} environment!"
+
+- name: Show db host private ip
+  debug:
+    var: db_host
+
 - name: Add unit file for Puma
   copy:
     src: puma.service

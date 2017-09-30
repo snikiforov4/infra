@@ -2,8 +2,5 @@
   hosts: reddit-app
   become: true
 
-  vars:
-    db_host: "{{ hostvars['reddit-db'].gce_private_ip }}"
-
   roles:
     - app

@@ -21,7 +21,7 @@ resource "google_compute_instance" "app" {
     }
   }
 
-  tags = ["reddit-app"]
+  tags = ["reddit-app", "app"]
 }
 
 resource "google_compute_firewall" "firewall_puma" {
