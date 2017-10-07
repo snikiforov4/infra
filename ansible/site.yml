@@ -1,4 +1,3 @@
 - import: db.yml
 - import: app.yml
-- import: nginx.yml
 - import: deploy.yml
