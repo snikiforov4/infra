@@ -15,5 +15,9 @@ backend.tf
 # Config file for dynanic inventory contains sensitive information
 gce.ini
 
+# Vagrant
+.vagrant/
+*.logs
+
 # Python
 *.pyc
