@@ -18,7 +18,7 @@ resource "google_compute_instance" "db" {
     access_config = {}
   }
 
-  tags = ["reddit-db", "db"]
+  tags = ["reddit-db"]
 }
 
 resource "google_compute_firewall" "firewall_mongo" {
