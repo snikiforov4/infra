@@ -1,3 +1,7 @@
+# Packer
+# ignore all variables defined by user
+packer/**/variables.json
+
 # Terraform
 *.tfstate
 *.tfstate.*.backup
@@ -8,6 +12,8 @@ backend.tf
 
 # Ansible
 *.retry
+# Config file for dynanic inventory contains sensitive information
+gce.ini
 
 # Python
 *.pyc
