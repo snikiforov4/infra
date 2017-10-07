@@ -26,3 +26,8 @@ To create instances using Terraform use the following command: `terraform apply`
 For this moment the following `environment` availbale:
  - prod
  - stage
+
+# Ansible
+For more information about how to use and configure dynamic inventory use following links:
+http://docs.ansible.com/ansible/latest/intro_dynamic_inventory.html
+http://docs.ansible.com/ansible/latest/guide_gce.html
