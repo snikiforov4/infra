@@ -15,6 +15,10 @@ backend.tf
 # Config file for dynanic inventory contains sensitive information
 gce.ini
 
+# Molecule
+.cache
+.molecule
+
 # Vagrant
 .vagrant/
 *.log
