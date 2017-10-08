@@ -2,9 +2,5 @@
   debug:
     msg: "This host is in {{ env }} environment!"
 
-- name: Show db host private ip
-  debug:
-    var: db_host
-
 - include: ruby.yml
 - include: puma.yml

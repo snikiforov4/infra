@@ -1,3 +1,7 @@
+- name: Show db host private ip
+  debug:
+    var: db_host
+
 - name: Add unit file for Puma
   template:
     src: puma.service.j2
