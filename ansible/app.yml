@@ -7,7 +7,9 @@
     - name: Install python for Ansible
       raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
       changed_when: false
+    - setup:
+       gather_subset: all
 
   roles:
     - app
-    # - jdauphant.nginx
+    - jdauphant.nginx
