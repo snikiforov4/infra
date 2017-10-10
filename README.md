@@ -33,3 +33,6 @@ http://docs.ansible.com/ansible/latest/intro_dynamic_inventory.html
 http://docs.ansible.com/ansible/latest/guide_gce.html
 
 It is highly recommended to use virtual environment when u a working with ansible. For more information use the following link: http://docs.python-guide.org/en/latest/dev/virtualenvs/
+
+For apply playbooks to hosts with already installed mongod and ruby with bundler use following command: 
+`ansible-playbook site.yml --skip-tags "install,ruby"`
