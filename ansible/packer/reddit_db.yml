@@ -1,0 +1,7 @@
+- name: Install and configure mongod service
+  hosts: all
+  gather_facts: no
+  become: true
+
+  roles:
+    - "../roles/db"

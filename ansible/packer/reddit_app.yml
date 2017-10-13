@@ -1,0 +1,7 @@
+- name: Install ruby and bundler
+  hosts: all
+  gather_facts: no
+  become: true
+
+  roles:
+    - "../roles/app"
